@@ -271,15 +271,18 @@ class parser extends AsyncTask<String, Void, Boolean> {
 								name = parser.getName();
 								if (name.equals("subtitle")) {
 									parser.next();
-									meta.subtitle = new String(parser.getText());
+									if (parser.getText() != null)
+										meta.subtitle = new String(parser.getText());
 								}
 								if (name.equals("title")) {
 									parser.next();
-									meta.title = new String(parser.getText());
+									if (parser.getText() != null)
+										meta.title = new String(parser.getText());
 								}
 								if (name.equals("release")) {
 									parser.next();
-									meta.version = new String(parser.getText());
+									if (parser.getText() != null)
+										meta.version = new String(parser.getText());
 								}
 								if (name.equals("day_change")) {
 									parser.next();
