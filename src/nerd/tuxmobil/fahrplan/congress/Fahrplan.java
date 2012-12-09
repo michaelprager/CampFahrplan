@@ -335,7 +335,7 @@ public class Fahrplan extends Activity implements OnClickListener {
 		if (MyApp.task_running == TASKS.NONE) {
 			MyApp.task_running = TASKS.FETCH;
 			showFetchingStatus();
-			fetcher.fetch("/congress/2011/Fahrplan/schedule.de.xml");
+			fetcher.fetch("/congress/2012/Fahrplan/schedule.de.xml");
 		} else {
 			Log.d(LOG_TAG, "fetch already in progress");
 		}
