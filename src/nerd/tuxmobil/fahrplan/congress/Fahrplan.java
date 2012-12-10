@@ -62,7 +62,7 @@ public class Fahrplan extends Activity implements OnClickListener {
 	private int day = 1;
 	private View dayTextView;
 	public static Context context = null;
-	public static String[] rooms = { "Saal 1", "Saal 2", "Saal 3" };
+	public static String[] rooms = { "Saal 1", "Saal 4", "Saal 6" };
 	private FahrplanParser parser;
 	private LinearLayout statusBar;
 	private Animation slideUpIn;
@@ -386,8 +386,8 @@ public class Fahrplan extends Activity implements OnClickListener {
 
 		fillTimes();
 		fillRoom("Saal 1", R.id.raum1);
-		fillRoom("Saal 2", R.id.raum2);
-		fillRoom("Saal 3", R.id.raum3);
+		fillRoom("Saal 4", R.id.raum2);
+		fillRoom("Saal 6", R.id.raum3);
 //		dayTextView.setText(String
 //				.format("%s %d", getString(R.string.day), day));
 		actionBar.updateText(dayTextView, String.format("%s %d", getString(R.string.day), day));
